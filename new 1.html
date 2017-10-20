@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>php test</title>
+</head>
+<body>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/10/19
+ * Time: 19:27
+ */
+echo '<p>hello world </p>';
+
+function test(){
+   global $z;
+        $z=20;
+    echo $z;
+    echo"<br>";
+}
+test();
+$x=10;
+echo $z;
+echo"<br>";
+echo $x;
+echo "<h2>php is godo</h2>";
+echo "<br>";
+echo "this"," string"," jis";
+$txt1="learn php";
+$txt2=" whichi.com.cn";
+$cars=array("first","second","three");
+echo $txt1;
+echo "<br>";
+echo "study php at $txt2<br>";
+echo "my car is a {$cars[0]}<br>";
+$xyz=333;
+$zy=0.123;
+var_dump($xyz);
+var_dump($zy);
+$buss=array("jili","tiai","dhi");
+var_dump($buss);
+
+echo strlen("thsihishis");
+echo "<br>";
+echo strpos("hello world","world");
+echo"<br>";
+define("greeting","Welcome to w3c",true);
+echo greeting;
+echo "<br>";
+echo GREETING;
+echo "<br>";
+$x=10;
+$y=5;
+echo ($x+$y);
+echo"<br>";
+$a="hello";
+$b=$a." world";
+echo $b;
+echo "<br>";
+$a="hello";
+$a .=" world!";
+echo $a;
+echo"<br>";
+$x=10;
+echo ++$x;
+echo "<br>";
+echo $x++;
+$x=100;
+$y="100";
+var_dump($x!==$y);
+echo "<br>";
+$a=50;
+$b=90;
+var_dump($a>$b);
+echo "<br>";
+var_dump($a<$b);
+
+$t=date("H");
+if($t<"20"){
+    echo "have a good day!";
+}else{
+    echo "have a good night!";
+}
+for($x=0;$x<=10;$x++){
+    echo "数字是：$x <br>";
+}
+$colors=array("red","yellow","blue","black");
+foreach($colors as $value){
+    echo "$value <br>";
+}
+function familyName($fname="hal"){
+    echo " Zhang $fname.<br>";
+}
+familyName("li");
+familyName("hong");
+familyName();
+function sum($a,$b){
+    $z=$a+$b;
+    return $z;
+}
+echo "1+2=".sum(1,2)."<br>";
+echo "2+3=".sum(2,3)."<br>";
+$cars=array("bwm","volvo","tag");
+echo "i like ".$cars[0]." and ".$cars[2]."<br>";
+echo count($cars)."<br>";
+for($z=0;$z<count($cars);$z++){
+    echo $cars[$z]."<br>";
+}
+rsort($cars);
+for($z=0;$z<count($cars);$z++){
+    echo $cars[$z]."<br>";
+}
+
+$x=30;
+$y=40;
+function add(){
+    $GLOBALS['z']=$GLOBALS['x']+$GLOBALS['y'];
+}
+add();
+echo $z."<br>";
+echo $_SERVER['PHP_SELF']."<br>";
+echo $_SERVER["SERVER_NAME"]."<br>";
+echo $_SERVER['SERVER_SOFTWARE']."<br>";
+echo $_SERVER['SERVER_PORT']."<br>";
+
+?>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
